@@ -1,0 +1,16 @@
+/*这是一个注释*/
+html,body{
+
+	font-size: 100%;
+	font-family: sans-serif;
+}
+p{
+	text-align: center;
+	color: blue;
+	font-family: arial;
+}
+#para1
+{
+text-align: center;
+color: red
+}

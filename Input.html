@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单和输入</title>
+</head>
+<body>
+<form name="input" action="www.baidu.com" method="get"> 
+Password:<input type="text" name="password">
+<input type="submit" value="提交">
+</form>
+<form action="">
+	<input type="radio" name="sex" value="male">Male<br>
+	<input type="radio" name="sex" value="female">Female
+</form>
+<p><b>注意：</b>注意选中的状态</p>
+<form action="">
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+</form>
+<!-- 下拉列表 -->
+<br>
+<form action="">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="baoma" selected>BMW</option>
+<option value="audi">Audi</option>
+</select>
+</form>
+
+<textarea rows="10" cols="50">
+	我是一个文本框，我可以输入好多的字，轻轻的我来了，轻轻的我走了接着写没有超过字数继续经济建设成就世界级的检测技术生产技术经济借鸡生蛋死绥芬河市肯定会说和可视电话是咖啡还是咖啡和思考可以了
+</textarea>
+<form>
+	<input type="button" name="HHHH" value="HelloWorld">
+</form>
+<fieldset>
+<legend>Personal information:</legend>
+Name: <input type="text" size="30"><br>
+E-mail: <input type="text" size="30"><br>
+Date of birth: <input type="text" size="10">
+</fieldset>
+</form>
+
+<form action="/statics/demosource/demo-form.php" method="post">
+First name: <input type="text" name="FirstName" value="Mickey"><br>
+Last name: <input type="text" name="LastName" value="Mouse"><br>
+<input type="submit" value="提交">
+</form>
+
+<iframe src="https://www.baidu.cn/" width="1000" height="200" frameborder="0"></iframe>
+
+<iframe src="demo-form.php"></iframe>
+
+<p>一些旧的浏览器不支持 iframe。</p>
+<p>如果浏览器不支持 iframes 则不会显示。</p>
+<br>
+<p style="background-color:#FFFF00">
+通过十六进制设置背景颜色
+</p>
+
+<p style="background-color:rgb(255,255,0)">
+通过 rgb 值设置背景颜色
+</p>
+
+<p style="background-color:yellow">
+通过颜色名设置背景颜色
+</p>
+
+<script type="text/javascript">
+	document.write("HelloWorld!")
+</script>
+
+<p>
+JavaScript 能够直接写入 HTML 输出流中：
+</p>
+<script>
+document.write("<h1>这是一个标题</h1>");
+document.write("<p>这是一个段落。</p>");
+</script>
+<p>
+您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+
+<p id="demo">
+	哈哈哈哈哈哈
+</p>
+<script type="text/javascript">
+	function myFunction(){
+
+	var result = document.getElementById('demo').innerHTML = "HelloWorld";
+
+		// alert(result);
+
+	}
+</script>
+<button type="button" onclick="myFunction()">Click me</button>
+</body>
+</html>

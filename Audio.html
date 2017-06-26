@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>播放音频</title>
+</head>
+<body>
+	<audio id="audio" src = "/Users/SXF/Desktop/西亚斯成都.mp3" controls="controls">你的浏览器不支持</audio>
+<button onclick="clickA()">播放/暂停</button>
+<script type="text/javascript">
+	var a = document.getElementById("audio")
+	function clickA(){
+
+		if (a.paused) {
+			a.play()
+		}else{
+			a.pause();
+		}
+	}
+</script>
+</body>
+</html>
